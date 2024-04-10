@@ -1,41 +1,65 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <title>Contact Me</title>
+  <title>Aryan Karn's Website</title>
 </head>
+<style>
+  body{
+    background-image: url(space.gif);
+    color: white;
+    font-family: monospace;
+  }
+  th, td{
+    font-family: monospace;
+  }
+  .navbar{
+display: flex;
+justify-content: space-around;
+align-items: flex-start;
+background-color: blue;
+padding: 10px;
+  }
+  .items{
+text-decoration: none;
+list-style: none;
+border: solid;
+background-color: yellow;
+border-radius: 20px;
+padding: 10px;
+  }
+
+  .items:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+</style>
 <body>
-  <font face="helvetica">
-      <h1 align=center>Aryan Karn</h1>
-      <h2 align="center">Knowledge is <font color=red><b><i><big>Power</big></i></b></font></h2>
-    <font size=4>
-      <table align=center cellpadding="20" cellspacing="0">
-        <tr>
-          <td><font size=5><a href="ctfindex.html">Home</a></font></td>
-          <td><font size=5><a href="contactme.html">Contact Me</a></font></td>
-        </tr>      
-      </table>
-      <hr><hr>
-    </font>
-    <font face="helvetica">
-      <h1 style="font-size: 7;"><center>Message Submissions</center></h1>
-      <p style="font-size: 6; color: purple;">I can be contacted through the following steps.</p>
-        <p style="font-size: 4;">To contact me, please follow the steps given</p>
-        <ol>
+  <h1 align=center>Aryan Karn</h1>
+  <marquee direction=right scrollmount=5><h2 align="center">Knowledge is <font color=red><b><i><big>Power</big></i></b></font></h2></marquee>
+ <ul class="navbar">
+  <li class="items"><a href="ctfindex.html">Home</a></li>
+  <li class="items"><a href="contactme.html">Contact me</a></li>
+  <li class="items">About me</li>
+ </ul>
+  <hr><hr>
+      <h1 style="font-size: 300%;"><center>Message Submissions</center></h1>
+      <p style="font-size: 175%; color: purple;">I can be contacted through the following steps.</p>
+        <p style="font-size: 175%;">To contact me, please follow the steps given</p>
+        <ol style="font-size: 150%;">
           <li>Complete the online form along with your message</li>
           <li>Submit the form filling the required fields.</li>
           <li>Wait for the reply</li>
         </ol>
-      </font>
       
-        <form align=center>
-          <h2><font color=red><b>Contact Form</b></font></h2>
+        <form align=center; action="submitted.html" >
+          <h2 style="color: red;font-size: 200%;" required><b>Contact Form</b></h2>
           Full Name<br>
-          <input type="text" name="Full name"><br><br>
+          <input type="text" name="Fname" required><br><br>
           Message<br>
-          <input type="text" name="DOB"><br><br>
-          Additional information<br><input type="text" name="Phone" height=400><br><br>
-          E-mail<br><input type="text" name="Address"><br><br>
-          <input type="submit" value="Submit Application">
+          <input type="text" name="message" required><br><br>
+          Additional information<br><input type="text" name="info" height=400><br><br>
+          E-mail<br><input type="email" name="mail" required><br><br>
+          <button>Submit</button>
         </form>
         <hr><hr>
     </font>

@@ -3,36 +3,55 @@
 <head>
   <title>Aryan Karn's Website</title>
 </head>
+<style>
+  body{
+    background-image: url(space.gif);
+    color: white;
+    font-family: monospace;
+  }
+  th, td{
+    font-family: monospace;
+  }
+  .navbar{
+display: flex;
+justify-content: space-around;
+align-items: flex-start;
+background-color: blue;
+padding: 10px;
+  }
+  .items{
+text-decoration: none;
+list-style: none;
+border: solid;
+background-color: yellow;
+border-radius: 20px;
+padding: 10px;
+  }
+
+  .items:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+</style>
 <body>
-  <font face="helvetica">
-    <font size=2>
       <h1 align=center>Aryan Karn</h1>
       <marquee direction=right scrollmount=5><h2 align="center">Knowledge is <font color=red><b><i><big>Power</big></i></b></font></h2></marquee>
-    </font>
-    <font size=4>
-      <table align=center cellpadding="20" cellspacing="0">
-        <tr>
-          <td><font size=5><a href="ctfindex.html">Home</a></font></td>
-          <td><font size=5><a href="contactme.html">Contact Me</a></font></td>
-        </tr>
-      </table>
+     <ul class="navbar">
+      <li class="items"><a href="ctfindex.html">Home</a></li>
+      <li class="items"><a href="contactme.html">Contact me</a></li>
+      <li class="items">About me</li>
+     </ul>
       <hr><hr>
-    </font>
     <h1>About Me</h1>
-    <p>
-      <font size=6>
-        <font color=red>
-          <big>
-            <b>Welcome</b> to My Website
-          </big>
-        </font>I am a 10th grader studying in N.K. Singh Memorial E.P.S School. I am so excited to participate in this coding camp as it gives me the opportunity to explore new fields, make new friends and have fun!
-      </font>
+    <p style="font-size:  300%;color: red;" >
+          <b>Welcome</b> to My Website</p>
+<p style="font-size: 200%;"> I am a 10th grader studying in N.K. Singh Memorial E.P.S School. I am so excited to participate in this coding camp as it gives me the opportunity to explore new fields, make new friends and have fun!</p>
     </p>
     <table cellspacing="0">
       <tr>
         <td valign=top>
-          <p>
-            <font size=5>
+          <p style="font-size: 150%;">
               I have tried coding with Scratch using websites such as
 HourofCode and I found it rather interesting and exciting.
 It opened new ways to express my creativity and to delve
@@ -45,21 +64,17 @@ every field of knowledge can be greatly improved if the
 workforce has substantial knowledge of coding skills.
 Therefore, I joined this coding camp because of the
 following reasons.
-            </font>
           </p>
         </td>
         <td>
           <p>
-            <img src="signature.png" align=right width=400 height=300>
           </p>
         </td>
       </tr>
     </table>
-    <table align="center" border="2" cellpadding="6" cellspacing="0">
-      <caption>
-        <font size="6" color=red>
+    <table align="center" border="2" cellpadding="6" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif;;">
+      <caption style="font-size: 200% ;color: red;">
           <b>Some details about me</b>
-        </font>
       </caption>
       <tr>
         <td><font size="5">Favorite Game Franchises</font></td>
@@ -87,7 +102,7 @@ following reasons.
       </tr>
     </table>
     <hr>
-    <p align=center>© Aryan Karn 2023. <b>All Rights Reserved</b></p>
+    <p align=center style="font-family: Arial, Helvetica, sans-serif;">© Aryan Karn 2024. <b>All Rights Reserved</b></p>
   </font>
 </body>
 </html>
