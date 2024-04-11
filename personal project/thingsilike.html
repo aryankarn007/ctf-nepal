@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          background-image: url(space.gif);
+          color: white;
+          font-family: monospace;
+        }
+        th, td{
+          font-family: monospace;
+        }
+        .navbar{
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 10px;
+        }
+        .items{
+          font-size: 20px;
+          color:black;
+      text-decoration: none;
+      list-style: none;
+      border: solid;
+      background-color: white;
+      border-radius: 20px;
+      padding: 10px;
+        }
+      
+        .items:hover{
+          background-color: white;
+          color: black;
+          cursor: pointer;
+          font-size:30px;
+        }
+        img{
+            border: 6px solid white;
+            border-radius: 25%;
+
+        }
+        li{
+      color: whitesmoke;
+        font-family: cursive;
+        display: table;
+        cursor: pointer;
+        transition: 0.6s;
+        
+    }
+
+    li:before,
+    li:after {
+      content:attr(data-text);
+      transition:.6s;
+    }
+
+    li:before {
+      
+      
+      position: absolute;
+     
+      
+      
+    }
+
+
+    
+    li:hover {
+      transform:translate(-10px,-10px);
+      color: slategray;
+    }
+    
+    a{
+      text-decoration: none;
+
+    }
+    img.car:hover{
+        width: 80%;
+        height: 80%;
+    }
+    img.athlete:hover{
+        width:60%;
+        height:60%;
+    }
+      </style>
+</head>
+<body>
+    <header>
+        <h1 align=center>Aryan Karn</h1>
+        <marquee direction=right scrollmount=5><h2 align="center"><font color="red"><i>Carpe Noctem</font>(Seize the Night)</i></h2></marquee>
+       <ul class="navbar">
+        <li class="items"><a href="ctfindex.html">Home</a></li>
+        <li class="items"><a href="contactme.html">Contact me</a></li>
+        <li class="items"><a href="thingsilike.html">About me</a></li>
+       </ul>
+       </header>
+        <hr><hr>
+    <h1>Here are some things I like</h1>
+    <center>
+    <h2>My Dream Car</h2>
+    <img class="car" src="koenigsegg.jpg" alt="An image of Koenigsegg Agera">
+    
+    <h2>My Favorite Athlete</h2>
+    <img class="athlete"src="max-verstappen.jpg" alt="image of formula 1 racer max verstappen" height="40%" width="40%">
+    </center>
+</body>
+</html>

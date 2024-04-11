@@ -15,36 +15,74 @@
 display: flex;
 justify-content: space-around;
 align-items: flex-start;
-background-color: blue;
 padding: 10px;
   }
   .items{
+    font-size: 20px;
+    color:black;
 text-decoration: none;
 list-style: none;
 border: solid;
-background-color: yellow;
+background-color: white;
 border-radius: 20px;
 padding: 10px;
   }
 
   .items:hover{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     cursor: pointer;
     font-size:30px;
   }
+  li{
+      color: whitesmoke;
+        font-family: cursive;
+        display: table;
+        cursor: pointer;
+        transition: 0.6s;
+        
+    }
+
+    li:before,
+    li:after {
+      content:attr(data-text);
+      transition:.6s;
+    }
+
+    li:before {
+      
+      
+      position: absolute;
+     
+      
+      
+    }
+
+
+    
+    li:hover {
+      transform:translate(-10px,-10px);
+      color: slategray;
+    }
+    
+    a{
+      text-decoration: none;
+
+    }
 </style>
 <body>
-  <h1 align=center>Aryan Karn</h1>
-  <marquee direction=right scrollmount=5><h2 align="center">Knowledge is <font color=red><b><i><big>Power</big></i></b></font></h2></marquee>
+  <header>
+  <h1 align=center><big>A</big>ryan <big>K</big>arn</h1>
+  <marquee direction=right scrollmount=5><h2 align="center"><i><font color="red">Carpe Noctem</font>(Seize the Night)</h2></marquee>
  <ul class="navbar">
   <li class="items"><a href="ctfindex.html">Home</a></li>
   <li class="items"><a href="contactme.html">Contact me</a></li>
-  <li class="items">About me</li>
+  <li class="items"><a href="thingsilike.html">Things I Like</a></li>
  </ul>
+ </header>
   <hr><hr>
       <h1 style="font-size: 300%;"><center>Message Submissions</center></h1>
-      <p style="font-size: 175%; color: purple;">I can be contacted through the following steps.</p>
+      <p style="font-size: 175%; color: cyan;">I can be contacted through the following steps.</p>
         <p style="font-size: 175%;">To contact me, please follow the steps given</p>
         <ol style="font-size: 150%;">
           <li>Complete the online form along with your message</li>
@@ -55,14 +93,19 @@ padding: 10px;
         <form align=center; action="submitted.html" >
           <h2 style="color: red;font-size: 200%;" required><b>Contact Form</b></h2>
           Full Name<br>
-          <input type="text" name="Fname" required><br><br>
+          <input type="text" name="Fname" aria-label="Enter your first name"required><br><br>
           Message<br>
-          <input type="text" name="message" required><br><br>
-          Additional information<br><input type="text" name="info" height=400><br><br>
-          E-mail<br><input type="email" name="mail" required><br><br>
+          <input type="text" name="message" required aria-label="enter message"><br><br>
+          Additional information<br><input type="text" name="info" height=400 aria-label="enter additional info"><br><br>
+          E-mail<br><input type="email" name="mail" aria-label="Enter your e-mail" required><br><br>
           <button>Submit</button>
         </form>
         <hr><hr>
     </font>
+    <hr>
+    <footer>
+    <p align=center style="font-family: Arial, Helvetica, sans-serif;">© Aryan Karn 2024. <b>All Rights Reserved</b></p>
+    <center><img src="whitesign.png" width="400" height="100"></center>
+    </footer>
 </body>
 </html>
